@@ -1,0 +1,270 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #546e7a;
+}
+
+.container-fluid {
+  padding: 0 15px;
+}
+
+.container {
+  padding: 0 15px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.link-decor-on-hover {
+  &:hover {
+    text-decoration: underline !important;
+  }
+}
+
+.text-white {
+  color: #fff !important;
+}
+
+.title {
+  color: #263238;
+  font-size: 32px;
+  font-weight: 700;
+  padding: 0 10px;
+  line-height: 1.2;
+  text-align: center;
+
+  @include tablet{
+    font-size: 30px;
+  }
+
+  @include mobile-large {
+    font-size: 28px;
+  }
+
+  @include mobile {
+    font-size: 25px;
+    padding: 0 5px;
+  }
+}
+
+.default-section {
+  padding: 120px 0;
+
+  @include tablet {
+    padding: 100px 0;
+  }
+
+  @include mobile-large {
+    padding: 80px 0;
+  }
+  @include mobile {
+    padding: 60px 0;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+.card {
+  overflow: hidden;
+  box-shadow: 0 16px 20px rgba(216, 216, 216, 0.75);
+  position: relative;
+  letter-spacing: 0.1px;
+  display: block;
+  
+  &--flash {
+    &::after {
+      content: '';
+      position: absolute;
+      top: -45px;
+      left: -45px;
+      background-color: #8bc34a;
+      width: 90px;
+      height: 90px;
+      transform: rotate(45deg);
+    }
+    &::before {
+      font-family: "Font Awesome 5 Free";
+      content: "\f0e7";
+      font-weight: 900;
+      position: absolute;
+      top: 11px;
+      left: 14px;
+      color: #fff;
+      font-size: 18px;
+      z-index: 9;
+    }
+  }
+
+  &__img {
+    display: block;
+    height: 14vw;
+    overflow: hidden;
+
+    @include widescreen {
+      height: 17vw;
+    }
+
+    @include laptop {
+      height: 24vw;
+    }
+
+    @include mobile-large {
+      height: 48vw;
+    }
+  }
+
+  &__pic {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__name-price {
+    height: 90px;
+    border-bottom: 1px solid #e7ecf2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+
+    @include tablet {
+      padding: 0 10px;
+    }
+  }
+
+  &__name-title {
+    display: block;
+    margin-bottom: 15px;
+    color: #263238;
+    font-size: 16px;
+    font-weight: 500;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+
+    @include mobile-large {
+      margin-bottom: 12px;
+      font-size: 14px;
+    }
+  }
+
+  &__name-text {
+    color: #8bc34a;
+    font-size: 14px;
+    font-weight: 500;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+
+    @include mobile-large {
+      font-size: 13px;
+      letter-spacing: -0.2px;
+    }
+  }
+
+  &__price {
+    color: #263238;
+    font-size: 20px;
+    font-weight: 700;
+
+    @include mobile-large {
+      font-size: 16px;
+    }
+  }
+
+  &__author {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__author-photo {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin-right: 8px;
+
+    @include tablet {
+      margin-right: 4px;
+      width: 24px;
+      height: 24px;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__author-name {
+    color: #546e7a;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 30px;
+
+    @include tablet {
+      line-height: 24px;
+      font-size: 12px;
+    }
+  }
+
+  &__author-about {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    padding: 0 15px;
+
+    @include tablet {
+      padding: 0 10px;
+      font-size: 11px;
+    }
+  }
+
+  &__author-rating {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__author-rating-stars {
+    color: #ffa726;
+    white-space: nowrap;
+    letter-spacing: -2px;
+  }
+
+  &__author-rating-count {
+    color: #263238;
+    margin-left: 8px;
+
+    @include tablet {
+      margin-left: 4px;
+    }
+
+  }
+}
+
+.mt-auto {
+  margin-top: auto;
+}
+.mb-auto {
+  margin-bottom: auto;
+}
+.ml-auto {
+  margin-left: auto;
+}
+.mr-auto {
+  margin-right: auto;
+}
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+.my-auto {
+  margin-top: auto;
+  margin-bottom: auto;
+}

@@ -1,0 +1,124 @@
+.header {
+  &--user {
+    .cart-drop-down {
+      @include  mobile-large {
+        right: auto;
+        left: 0;
+        top: 50px;
+      }
+
+      @include mobile {
+        width: 100%;
+      }
+    }
+  }
+}
+.cart-drop-down {
+  display: none;
+  width: 268px;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0 16px 20px rgba(216, 216, 216, 0.75);
+  border: 1px solid #cccccc;
+  right: 0;
+  top: 92px;
+  z-index: 10;
+
+  @include mobile {
+    width: 100%;
+    top: 48px;
+    left: 0;
+    right: auto;
+  }
+
+  &__list-item {
+    display: flex;
+    padding: 22px;
+    border-bottom: 1px solid #e0e0e0;
+  }
+
+  &__item-img {
+    width: 73px;
+    min-width: 73px;
+    height: 57px;
+    background-color: #d4d4d4;
+    overflow: hidden;
+    border: 1px solid #e0e0e0;
+  }
+
+  &__item-pic {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  &__item-info {
+    margin-left: 14px;
+    max-width: 138px;
+  }
+
+  &__item-name {
+    display: block;
+    color: #263238;
+    font-size: 15px;
+    font-weight: 500;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+  &__item-category {
+    color: #84b743;
+    font-size: 12px;
+    font-weight: 400;
+    margin: 6px 0 10px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+  &__item-price {
+    color: #000000;
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+//  bottom
+  &__bottom {
+    padding: 16px 16px 12px;
+  }
+
+  &__total-price {
+    display: flex;
+    justify-content: space-between;
+    color: #263238;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 0 24px 16px 14px;
+  }
+
+  &__actions {
+    display: flex;
+    justify-content: space-between;
+    color: #f4f6f5;
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  &__action-cart {
+    text-align: center;
+    line-height: 35px;
+    width: 105px;
+    height: 35px;
+    background-color: #95c85a;
+
+  }
+
+  &__action-checkout {
+    width: 123px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    background-color: #e85647;
+  }
+}

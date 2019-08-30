@@ -1,0 +1,28 @@
+.trending-products {
+  margin-bottom: -36px;
+
+  &__carousel {
+    margin-top: 56px;
+
+    .owl-dots {
+      width: 100%;
+      text-align: center;
+    }
+    button.owl-dot {
+      width: 16px;
+      height: 16px;
+      background-color: #e8e8e8;
+      border-radius: 50%;
+      margin: 0 4px;
+    }
+
+    button.owl-dot.active {
+      background-color: #8bc34a;
+    }
+  }
+
+  &__card-wrapper {
+    padding-bottom: 36px;
+  }
+
+}

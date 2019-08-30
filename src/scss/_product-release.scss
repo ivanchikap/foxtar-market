@@ -1,0 +1,103 @@
+.products-release {
+  background-color: #f4f6f5;
+
+  &__tabname-list {
+    margin: 60px auto 45px;
+
+    @include tablet {
+      margin: 50px auto 35px;
+    }
+
+    @include mobile-large {
+      flex-wrap: wrap;
+      height: 84px;
+    }
+  }
+
+  &__tabname-item  {
+    margin-right: 6px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__tabname-link {
+    padding: 12px 22px;
+    background-color: #fff;
+    transition: all .3s ease-in-out;
+    color: #263238;
+    font-size: 14px;
+    font-weight: 500;
+
+    @include tablet {
+      padding: 10px 20px;
+      font-size: 13px;
+    }
+
+    &:hover {
+      box-shadow: 0 2px 5px rgba(202, 215, 228, 0.75);
+      background-color: #e74c3c;
+    }
+  }
+
+  .products-release__tab-item {
+    @include tablet {
+      margin: 0 -15px;
+    }
+  }
+
+  &__card-wrapper {
+    width: 25%;
+    padding: 15px;
+
+    @include widescreen {
+      width: 33.3333%;
+    }
+
+    @include laptop {
+      width: 50%;
+    }
+
+    @include mobile-large {
+      width: 100%;
+    }
+  }
+
+  &__tab-item {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__links-list {
+    margin-top: 52px;
+  }
+
+  &__links-item + &__links-item {
+    margin-left: 12px;
+  }
+
+  &__links-link {
+    padding: 18px 32px;
+    box-shadow: 0 1px 3px rgba(204, 216, 228, 0.75);
+    background-color: #ffffff;
+    color: #263238;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    transition: all .3s ease-in-out;
+
+    @include mobile-large {
+      padding: 16px 30px;
+    }
+    @include mobile {
+      font-size: 14px;
+      padding: 14px 26px;
+    }
+
+    &:hover {
+      background-color: #8bc34a;
+      box-shadow: 0 6px 6px rgba(139, 195, 74, 0.75);
+    }
+  }
+}
