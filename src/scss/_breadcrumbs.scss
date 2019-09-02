@@ -1,0 +1,20 @@
+.bread-crumbs {
+  margin: 49px 0 40px;
+  color: #263238;
+  font-size: 15px;
+  font-weight: 400;
+
+  &__from {
+    color: #b0bec5;
+  }
+
+  &__to {
+    color: #78909c;
+
+    &::before {
+      content: "-";
+      color: #8bc34a;
+      margin: 0 10px;
+    }
+  }
+}

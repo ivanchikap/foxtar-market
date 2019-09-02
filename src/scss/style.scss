@@ -3,12 +3,15 @@
 @import "mixins";
 @import "flex";
 @import "base";
+@import "card";
 @import "header/all";
-@import "menu";
-@import "banner";
+@import "header/menu";
+@import "header/banner";
 @import "product-release";
 @import "trending-products";
 @import "why-choose";
 @import "author";
 @import "tutorials";
+@import "breadcrumbs";
+@import "main-items/all";
 @import "footer";

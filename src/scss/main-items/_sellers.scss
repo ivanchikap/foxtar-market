@@ -1,0 +1,45 @@
+.sellers {
+  padding: 26px 28px 18px;
+  background-color: #fff;
+  border: 1px solid #d7d7d7;
+  margin-top: 30px;
+
+  &__title {
+    color: #263238;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 18px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &__list {
+    padding: 0 5px;
+  }
+
+  &__list-item {
+    padding: 28px 0;
+    color: #263238;
+    font-size: 15px;
+    font-weight: 400;
+    border-top: 1px solid #dde3e8;
+  }
+  
+  &__btn {
+    display: block;
+    background-color: #8bc34a;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 500;
+    height: 48px;
+    width: 100%;
+    text-align: center;
+    line-height: 48px;
+    transition: box-shadow .3s ease-in-out;
+
+    &:hover {
+      box-shadow: 0 0 12px #8bc34a;
+    }
+  }
+}

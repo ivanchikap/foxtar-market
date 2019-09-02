@@ -1,5 +1,7 @@
 .banner {
-  background: #a0a0a0 url("../img/banner_image.png") no-repeat center / cover;
+  $root: &;
+
+  background: #a0a0a0 url("../../img/banner_image.png") no-repeat center / cover;
   height: 532px;
   color: #fff;
   display: flex;
@@ -10,8 +12,31 @@
     height: 510px;
   }
 
+  &--items {
+    height: 289px;
+
+    @include tablet {
+      height: 270px;
+    }
+
+    @include mobile-large {
+      height: 260px;
+    }
+
+    @include mobile {
+      height: 220px;
+    }
+
+    #{$root} {
+      &__text {
+        margin-bottom: 24px;
+        margin-top: 0;
+      }
+    }
+  }
+
   &__wrapper {
-    max-width: 750px;
+    max-width: 762px;
     padding: 0 15px;
   }
 
@@ -35,6 +60,7 @@
   &__text {
     font-size: 20px;
     font-weight: 500;
+    line-height: 1.2;
     margin: 34px 0 54px;
 
     @include tablet {
