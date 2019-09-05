@@ -33,11 +33,7 @@
         }
     });
 
+    $('.upload-form select').styler();
+    $('.upload-form__type-file').styler();
+
 }());
-
-
-
-
-// $(document).ready(function() {
-//
-// } );

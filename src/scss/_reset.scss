@@ -54,6 +54,9 @@ input, textarea, button {
 	outline: none;
 	border: none;
 }
+button {
+	cursor: pointer;
+}
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
