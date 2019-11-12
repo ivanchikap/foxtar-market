@@ -4,9 +4,12 @@
   &--user {
     #{$root} {
       &__user {
+        @include mobile-large {
+          padding-bottom: 16px;
+        }
+
         @include mobile {
           position: static;
-          padding-bottom: 16px;
         }
       }
     }

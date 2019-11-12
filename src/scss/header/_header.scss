@@ -6,12 +6,8 @@
       &__inner {
         @include mobile-large {
           flex-direction: column;
-          padding: 24px 0 16px;
-          height: auto;
-        }
-
-        @include mobile {
           padding: 24px 0 0;
+          height: auto;
         }
       }
 
@@ -20,6 +16,7 @@
           margin-top: 32px;
           justify-content: space-between;
         }
+
         @include mobile {
           justify-content: center;
         }
@@ -37,6 +34,10 @@
       }
 
       &__actions {
+        @include mobile-large {
+          margin-bottom: 16px;
+        }
+
         @include  mobile {
           display: none;
         }
@@ -50,7 +51,7 @@
     align-items: center;
     height: 92px;
 
-    @include mobile {
+    @include mobile-large {
       flex-direction: column;
       padding: 24px 0 0;
       height: auto;
@@ -67,9 +68,9 @@
     align-self: stretch;
     position: relative;
 
-    @include mobile {
-      justify-content: center;
+    @include mobile-large {
       margin-top: 32px;
+      justify-content: center;
     }
   }
 
@@ -98,7 +99,7 @@
     align-self: stretch;
     position: relative;
 
-    @include mobile {
+    @include mobile-large {
       position: static;
       padding-bottom: 16px;
     }
@@ -183,7 +184,7 @@
 
     &--anon {
 
-      @include mobile {
+      @include mobile-large {
         padding-bottom: 16px;
       }
     }

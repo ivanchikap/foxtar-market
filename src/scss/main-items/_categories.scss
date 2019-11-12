@@ -20,6 +20,11 @@
     color: #263238;
     font-size: 15px;
     font-weight: 400;
+    transition: color .2s ease-out;
+
+    &:hover {
+      color: #8bc34a;
+    }
 
     &::before {
       font-family: "Font Awesome 5 Free";
