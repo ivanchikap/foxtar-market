@@ -3,6 +3,14 @@
 
   &__main {
     padding: 116px 0 100px;
+
+    @include mobile-large {
+      padding: 86px 0 66px;
+    }
+
+    @include mobile {
+      padding: 76px 0 56px;
+    }
   }
 
   &__row {
@@ -19,6 +27,17 @@
     min-height: 1px;
     padding-right: 15px;
     padding-left: 15px;
+
+    @include laptop {
+      max-width: 50%;
+      flex: 0 0 50%;
+    }
+
+    @include mobile-large {
+      max-width: 100%;
+      flex: 0 0 100%;
+      text-align: center;
+    }
   }
 
   &__title {
@@ -26,6 +45,36 @@
     font-family: 'Raleway', sans-serif;
     font-size: 22px;
     font-weight: 700;
+
+    @include mobile {
+      font-size: 20px;
+    }
+
+    &--join {
+      @include mobile-large {
+        margin-top: 40px;
+      }
+    }
+
+    &--follow {
+      @include laptop {
+        margin-top: 40px;
+      }
+
+      @include mobile {
+        margin-top: 30px;
+      }
+    }
+
+    &--help {
+      @include laptop {
+        margin-top: 40px;
+      }
+
+      @include mobile {
+        margin-top: 30px;
+      }
+    }
 
     &::after {
       display: block;
@@ -43,6 +92,10 @@
     font-size: 15px;
     font-weight: 400;
     line-height: 1.6;
+
+    @include mobile {
+      font-size: 14px;
+    }
   }
 
   &__contacts-list {
@@ -62,6 +115,11 @@
       color: #8bc34a;
       font-size: 18px;
       margin-right: 16px;
+      padding-top: 4px;
+
+      @include mobile-large {
+        font-size: 16px;
+      }
     }
 
     &:last-child::before {
@@ -73,6 +131,11 @@
       font-size: 18px;
       margin-right: 16px;
       transform: rotate(90deg);
+      padding-top: 4px;
+
+      @include mobile-large {
+        font-size: 16px;
+      }
     }
   }
 
@@ -81,10 +144,14 @@
     font-size: 14px;
     font-weight: 500;
     line-height: 1.7;
-  }
+    
+    @include mobile-large {
+      text-align: left;
+    }
 
-  &__default-list {
-
+    @include mobile {
+      font-size: 13px;
+    }
   }
 
   &__default-item {
@@ -103,11 +170,17 @@
     color: #b7c3c8;
     font-size: 15px;
     font-weight: 400;
-    line-height: 36px;
+    line-height: 2.4;
+
+    @include mobile {
+      font-size: 14px;
+    }
   }
 
   &__socials-list {
-
+    @include mobile-large {
+      justify-content: center;
+    }
   }
 
   &__social-item {
@@ -161,11 +234,32 @@
     color: #ffffff;
     font-size: 20px;
     margin-bottom: 18px;
+
+    @include mobile {
+      font-size: 18px;
+    }
   }
 
   &__newsletter-form {
     position: relative;
     width: 261px;
+
+    @include widescreen {
+      width: 251px;
+    }
+
+    @include laptop {
+      width: 261px;
+    }
+
+    @include mobile-large {
+      width: 90%;
+      margin: 0 auto;
+    }
+
+    @include mobile {
+      width: 99%;
+    }
   }
 
   &__newsletter-input {
@@ -177,6 +271,12 @@
     color: #697378;
     font-size: 14px;
     font-weight: 400;
+
+    @include mobile {
+      font-size: 13px;
+      padding: 10px 52px 10px 12px;
+      height: 32px;
+    }
   }
 
   &__newsletter-btn {
@@ -188,16 +288,23 @@
     right: 1px;
     color: #ffffff;
     font-size: 20px;
+
+    @include mobile {
+      font-size: 18px;
+      width: 40px;
+      height: 30px;
+    }
   }
-
-
-
 
   &__copyright {
     color: #919699;
     font-size: 15px;
-    font-weight: 400;
     padding: 30px 0;
     border-top: 1px solid #424d53;
+
+    @include mobile {
+      font-size: 14px;
+      padding: 20px 0;
+    }
   }
 }
