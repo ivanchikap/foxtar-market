@@ -33,7 +33,18 @@
         }
     });
 
-    $('.upload-form select').styler();
-    $('.upload-form__type-file').styler();
+    // $('.upload-form select').styler();
+    // $('.upload-form__type-file').styler();
+    // $('.upload-form__text-input').styler();
 
+    $(".js-range-slider").ionRangeSlider({
+        type: "double",
+        prefix: '$',
+        min: 0,
+        max: 1000,
+        from: 0,
+        to: 600,
+        hide_min_max: true,
+        skin: "round"
+    });
 }());

@@ -1,0 +1,40 @@
+.cards {
+  display: flex;
+  margin: 0 -15px 30px -15px;
+  flex-wrap: wrap;
+
+  &__item-wrapper {
+    flex: 0 0 33.3333%;
+    min-width: 33.3333%;
+    margin-bottom: 30px;
+    padding: 0 15px;
+
+    @include laptop {
+      flex: 0 0 50%;
+      min-width: 50%;
+    }
+
+    @include mobile {
+      flex: 0 0 100%;
+      min-width: 100%;
+    }
+  }
+
+  .card {
+    &__img {
+      height: 180px;
+
+      @include laptop {
+        height: 18vw;
+      }
+
+      @include tablet {
+        height: 24vw;
+      }
+
+      @include mobile {
+        height: 48vw;
+      }
+    }
+  }
+}

@@ -189,4 +189,29 @@
     right: auto;
     top: 7px;
   }
+  .jq-number__spin.minus,
+  .jq-number__spin.plus {
+    display: none;
+  }
+  .jq-number__field {
+    width: 100%;
+    padding:0;
+    height: 40px;
+    border: none;
+    background: none;
+    outline: none;
+    box-shadow: none;
+
+
+    input {
+      color: #707070;
+      font-size: 15px;
+      font-weight: 400;
+      font-family: 'Roboto', sans-serif;
+    }
+  }
+  .jq-number.focused .jq-number__field {
+    border: none;
+    outline: none;
+  }
 }
