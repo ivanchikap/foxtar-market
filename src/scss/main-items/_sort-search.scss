@@ -34,6 +34,23 @@
     }
   }
 
+  &__mobile-btn {
+    display: none;
+    position: relative;
+    z-index: 2;
+    color: #707070;
+    transition: color.3s ease-out;
+    padding-right: 15px;
+
+    &:hover,
+    &--active {
+      color: #8bc34a;
+    }
+    @include tablet {
+      display: block;
+    }
+  }
+
   &__by {
     color: #707070;
     font-size: 14px;

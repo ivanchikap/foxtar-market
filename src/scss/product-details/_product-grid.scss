@@ -1,0 +1,12 @@
+.product {
+  &__inner {
+    display: flex;
+  }
+  &__main-info {
+    width: calc(100% - 300px);
+  }
+  &__sidebar {
+    width: 300px;
+    padding-left: 30px;
+  }
+}

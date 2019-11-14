@@ -1,0 +1,98 @@
+.prod-about {
+  margin-bottom: 55px;
+  &__img {
+    width: 100%;
+    height: 36.5vw;
+    padding: 18px 20px;
+    background-color: #fff;
+    overflow: hidden;
+  }
+  &__theme {
+    margin: 38px 0 22px;
+    color: #263238;
+    font-size: 30px;
+    font-weight: 500;
+  }
+
+  &__text {
+    color: #707070;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 44px;
+  }
+
+  &__links {
+
+  }
+
+  &__link {
+    padding: 17px 25px;
+    color: #f4f6f5;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    background: #707070;
+    transition: box-shadow .2s ease-out;
+    white-space: nowrap;
+
+    & + & {
+      margin-left: 18px;
+    }
+
+    &--preview {
+      background-color: #e74c3c;
+
+      &:hover {
+        box-shadow: 0 0 12px #e74c3c;
+      }
+    }
+
+    &--screenshots {
+      background-color: #455a64;
+
+      &:hover {
+        box-shadow: 0 0 12px #455a64;
+      }
+    }
+
+    &--documentation {
+      background-color: #8bc34a;
+
+      &:hover {
+        box-shadow: 0 0 12px #8bc34a;
+      }
+    }
+
+  }
+
+  &__social-link {
+    width: 54px;
+    height: 50px;
+    background-color: #707070;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-size: 18px;
+
+    & + & {
+      margin-left: 3px;
+    }
+
+    &--facebook {
+      background-color: #6370b6;
+    }
+
+    &--twitter {
+      background-color: #64b5f6;
+    }
+
+    &--linkedin {
+      background-color: #4f71ce;
+    }
+
+    &--pinterest {
+      background-color: #d32f2f;
+    }
+  }
+}

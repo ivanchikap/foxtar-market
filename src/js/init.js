@@ -12,6 +12,23 @@
         }
     });
 
+    // mobile sidebar start
+    let sidebar = $('.main__left');
+    let close = $('.main__left-close');
+
+    $('.sort-search__mobile-btn').click(function() {
+        if(sidebar.hasClass('main__left--active')) {
+            sidebar.removeClass('main__left--active');
+        }
+        else {
+            sidebar.addClass('main__left--active');
+        }
+    });
+    $(close).click(function() {
+        sidebar.removeClass('main__left--active');
+    });
+    // mobile sidebar end
+
     $( "#products-release__tabs" ).tabs();
 
     $( "#trending-products__carousel" ).owlCarousel({
@@ -33,18 +50,23 @@
         }
     });
 
-    // $('.upload-form select').styler();
-    // $('.upload-form__type-file').styler();
-    // $('.upload-form__text-input').styler();
 
-    $(".js-range-slider").ionRangeSlider({
-        type: "double",
-        prefix: '$',
-        min: 0,
-        max: 1000,
-        from: 0,
-        to: 600,
-        hide_min_max: true,
-        skin: "round"
-    });
+    if ($("section").is('.upload-product')) {
+        $('.upload-form select').styler();
+        $('.upload-form__type-file').styler();
+        $('.upload-form__text-input').styler();
+    }
+
+    if ($("section").is('.price')) {
+        $(".js-range-slider").ionRangeSlider({
+            type: "double",
+            prefix: '$',
+            min: 0,
+            max: 1000,
+            from: 0,
+            to: 600,
+            hide_min_max: true,
+            skin: "round"
+        });
+    }
 }());
