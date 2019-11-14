@@ -1,0 +1,28 @@
+.prod-sales {
+  background-color: #fff;
+  margin-bottom: 30px;
+  border: 1px solid #d7d7d7;
+  display: flex;
+  padding: 24px 28px;
+
+  &__count {
+    color: #263238;
+    font-size: 20px;
+    font-weight: 700;
+
+    &::before {
+      content: '\f07a';
+      font-family: 'Font Awesome 5 Free';
+      margin-right: 18px;
+      color: #a6b5bb;
+      font-size: 20px;
+    }
+  }
+
+  &__text {
+    color: #707070;
+    font-size: 16px;
+    font-weight: 300;
+    margin-left: 14px;
+  }
+}

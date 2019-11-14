@@ -29,6 +29,8 @@
     });
     // mobile sidebar end
 
+    $("#prod-tabs").tabs();
+
     $( "#products-release__tabs" ).tabs();
 
     $( "#trending-products__carousel" ).owlCarousel({
