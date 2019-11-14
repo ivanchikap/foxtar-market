@@ -24,10 +24,10 @@
     flex: 0 0 33.3333%;
     margin-bottom: 28px;
 
-    //@include laptop {
-    //  min-width: 50%;
-    //  flex: 0 0 50%;
-    //}
+    @include laptop {
+      min-width: 50%;
+      flex: 0 0 50%;
+    }
 
   }
 

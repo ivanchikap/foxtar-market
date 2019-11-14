@@ -4,9 +4,25 @@
   }
   &__main-info {
     width: calc(100% - 300px);
+
+    @include laptop {
+      width: calc(100% - 290px);
+    }
+
+    @include tablet {
+      width: calc(100% - 300px);
+    }
   }
   &__sidebar {
     width: 300px;
     padding-left: 30px;
+
+    @include laptop {
+      width: 290px;
+    }
+
+    @include tablet {
+      width: 300px;
+    }
   }
 }
