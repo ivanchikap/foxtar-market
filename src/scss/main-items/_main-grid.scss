@@ -2,6 +2,22 @@
   background-color: #f4f6f5;
   padding-bottom: 106px;
 
+  @include laptop {
+    padding-bottom: 96px;
+  }
+
+  @include tablet {
+    padding-bottom: 76px;
+  }
+
+  @include mobile-large {
+    padding-bottom: 66px;
+  }
+
+  @include mobile {
+    padding-bottom: 56px;
+  }
+
   &__container {
     display: flex;
   }

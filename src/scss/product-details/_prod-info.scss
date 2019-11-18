@@ -5,6 +5,10 @@
   margin-bottom: 30px;
   background-color: #fff;
 
+  @include tablet {
+    display: none;
+  }
+
   &__title {
     color: #263238;
     font-size: 20px;

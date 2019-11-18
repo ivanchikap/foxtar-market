@@ -289,8 +289,8 @@
                             <h4 class="prod-about__theme">GTBuilder - Construction & Building WordPress Theme</h4>
                             <p class="prod-about__text">Bmply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived noning essentially unchanged.
                             </p>
-                            <div class="prod-about__links d-flex justify-content-between align-items-center">
-                                <div class="prod-about__links-left d-flex">
+                            <div class="prod-about__links d-flex justify-content-between align-items-center flex-sm-column">
+                                <div class="prod-about__links-left d-flex flex-sm-column">
                                     <a href="#" class="prod-about__link prod-about__link--preview">Live Preview</a>
                                     <a href="#" class="prod-about__link prod-about__link--screenshots">Screenshots</a>
                                     <a href="#" class="prod-about__link prod-about__link--documentation">Documentation</a>
@@ -315,13 +315,13 @@
                         </section>
                         <!-- / prod-about -->
                         <section class="prod-tabs" id="prod-tabs">
-                            <ul class="d-flex">
+                            <ul class="d-flex flex-xs-wrap">
                                 <li class="prod-tabs__item"><a class="prod-tabs__link" href="#features">Item Features</a></li>
                                 <li class="prod-tabs__item"><a class="prod-tabs__link" href="#comments">Comments</a></li>
                                 <li class="prod-tabs__item"><a class="prod-tabs__link" href="#reviews">Reviews</a></li>
                                 <li class="prod-tabs__item"><a class="prod-tabs__link" href="#support">Support</a></li>
                             </ul>
-                            <div id="features" class="prod-tabs__tab d-flex">
+                            <div id="features" class="prod-tabs__tab">
                                 <ul class="prod-tabs__default-list">
                                     <li class="prod-tabs__default-item d-flex align-items-center">
                                         Printing and typesetting industry
@@ -338,8 +338,6 @@
                                     <li class="prod-tabs__default-item d-flex align-items-center">
                                         Bhen an unknown printe
                                     </li>
-                                </ul>
-                                <ul class="prod-tabs__default-list">
                                     <li class="prod-tabs__default-item d-flex align-items-center">
                                         Printing and typesetting industry
                                     </li>
@@ -366,8 +364,6 @@
                                     <li class="prod-tabs__default-item d-flex align-items-center">
                                         Bhen an unknown printe
                                     </li>
-                                </ul>
-                                <ul class="prod-tabs__default-list">
                                     <li class="prod-tabs__default-item d-flex align-items-center">
                                         Printing and typesetting industry
                                     </li>
@@ -377,8 +373,6 @@
                                     <li class="prod-tabs__default-item d-flex align-items-center">
                                         Handard dummy text
                                     </li>
-                                </ul>
-                                <ul class="prod-tabs__default-list">
                                     <li class="prod-tabs__default-item d-flex align-items-center">
                                         Printing and typesetting industry
                                     </li>
@@ -405,16 +399,12 @@
                                     <li class="prod-tabs__default-item d-flex align-items-center">
                                         Bhen an unknown printe
                                     </li>
-                                </ul>
-                                <ul class="prod-tabs__default-list">
                                     <li class="prod-tabs__default-item d-flex align-items-center">
                                         Printing and typesetting industry
                                     </li>
                                     <li class="prod-tabs__default-item d-flex align-items-center">
                                         Handard dummy text
                                     </li>
-                                </ul>
-                                <ul class="prod-tabs__default-list">
                                     <li class="prod-tabs__default-item d-flex align-items-center">
                                         Printing and typesetting industry
                                     </li>
@@ -444,22 +434,6 @@
                                     <li class="prod-tabs__default-item d-flex align-items-center">
                                         Bhen an unknown printe
                                     </li>
-                                </ul>
-                                <ul class="prod-tabs__default-list">
-                                    <li class="prod-tabs__default-item d-flex align-items-center">
-                                        Bhen an unknown printe
-                                    </li>
-                                    <li class="prod-tabs__default-item d-flex align-items-center">
-                                        Printing and typesetting industry
-                                    </li>
-                                    <li class="prod-tabs__default-item d-flex align-items-center">
-                                        Bhen an unknown printe
-                                    </li>
-                                    <li class="prod-tabs__default-item d-flex align-items-center">
-                                        Handard dummy text
-                                    </li>
-                                </ul>
-                                <ul class="prod-tabs__default-list">
                                     <li class="prod-tabs__default-item d-flex align-items-center">
                                         Printing and typesetting industry
                                     </li>
@@ -583,31 +557,34 @@
                             <a href="#" class="prod-price__btn prod-price__btn--buy">Buy Now</a>
                         </div>
                         <!-- / prod-price -->
-                        <div class="prod-author">
-                            <h4 class="prod-author__title">Product Author</h4>
-                            <div class="prod-author__card d-flex align-items-center">
-                                <div class="prod-author__card-photo">
-                                    <img src="img/prod-author.jpg" alt="author">
+                        <div class="prod-author-sales-wrapper">
+                            <div class="prod-author">
+                                <h4 class="prod-author__title">Product Author</h4>
+                                <div class="prod-author__card d-flex align-items-center">
+                                    <div class="prod-author__card-photo">
+                                        <img src="img/prod-author.jpg" alt="author">
+                                    </div>
+                                    <div class="prod-author__card-info">
+                                        <span class="prod-author__card-name">PsdBoss</span>
+                                        <a class="prod-author__card-btn" href="#">View Profile</a>
+                                    </div>
                                 </div>
-                                <div class="prod-author__card-info">
-                                    <span class="prod-author__card-name">PsdBoss</span>
-                                    <a class="prod-author__card-btn" href="#">View Profile</a>
-                                </div>
+                                <ul class="prod-author__batches d-flex justify-content-between">
+                                    <li class="prod-author__batch"><img src="img/smile.jpg" alt="smile"></li>
+                                    <li class="prod-author__batch"><img src="img/branch.jpg" alt="branch"></li>
+                                    <li class="prod-author__batch"><img src="img/flash.jpg" alt="flash"></li>
+                                    <li class="prod-author__batch"><img src="img/f-img.jpg" alt="f-img"></li>
+                                    <li class="prod-author__batch"><img src="img/iens.jpg" alt="iens"></li>
+                                </ul>
                             </div>
-                            <ul class="prod-author__batches d-flex justify-content-between">
-                               <li class="prod-author__batch"><img src="img/smile.jpg" alt="smile"></li>
-                               <li class="prod-author__batch"><img src="img/branch.jpg" alt="branch"></li>
-                               <li class="prod-author__batch"><img src="img/flash.jpg" alt="flash"></li>
-                               <li class="prod-author__batch"><img src="img/f-img.jpg" alt="f-img"></li>
-                               <li class="prod-author__batch"><img src="img/iens.jpg" alt="iens"></li>
-                            </ul>
+                            <!-- / prod-author -->
+                            <div class="prod-sales d-flex align-items-center justify-content-xs-center">
+                                <span class="prod-sales__count">05</span>
+                                <span class="prod-sales__text">Sales</span>
+                            </div>
+                            <!-- / prod-sales -->
                         </div>
-                        <!-- / prod-author -->
-                        <div class="prod-sales d-flex align-items-center">
-                            <span class="prod-sales__count">05</span>
-                            <span class="prod-sales__text">Sales</span>
-                        </div>
-                        <!-- / prod-sales -->
+                        <!-- / prod-author-sales-wrapper -->
                         <div class="prod-info">
                             <div class="prod-info__title">Product Information</div>
                             <ul class="prod-info__list">
