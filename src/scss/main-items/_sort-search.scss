@@ -23,6 +23,7 @@
       cursor: pointer;
       z-index: 2;
     }
+
     .fa-sort-amount-down {
       color: #455a64;
       font-size: 14px;
@@ -40,12 +41,13 @@
     z-index: 2;
     color: #707070;
     transition: color.3s ease-out;
-    padding-right: 15px;
+    padding-right: 12px;
 
     &:hover,
     &--active {
       color: #8bc34a;
     }
+
     @include tablet {
       display: block;
     }
@@ -55,6 +57,10 @@
     color: #707070;
     font-size: 14px;
     margin: 0 14px 0 12px;
+
+    @include mobile {
+      margin: 0 10px 0 8px;
+    }
   }
 
   &__input {
@@ -86,6 +92,10 @@
       position: relative;
       z-index: 2;
       cursor: pointer;
+
+      @include mobile {
+        padding-left: 6px;
+      }
     }
   }
 

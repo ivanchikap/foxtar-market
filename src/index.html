@@ -7,11 +7,42 @@
     <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/izimodal.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
     <header class="header">
+        <section id="modal" class="modal">
+            <div class="login">
+
+                <span class="login__close">
+                    <i class="fas fa-times"></i>
+                </span>
+                <!-- / close-->
+                <h2 class="login__title">Login</h2>
+                <form action="#" class="login__form">
+                    <div class="login__input-group">
+                        <i class="login__input-icon fas fa-user"></i>
+                        <input class="login__input" type="text" placeholder="Name">
+                    </div>
+                    <div class="login__input-group">
+                        <i class="login__input-icon fas fa-lock"></i>
+                        <input class="login__input" type="password" placeholder="Password">
+                    </div>
+                    <div class="login__buttons">
+                        <button class="login__submit" type="submit">Submit</button>
+                        <a href="#" class="login__register">
+                            <i class="fas fa-edit"></i>
+                            <span class="login__reg-label">Creat An Account?</span>
+                        </a>
+                    </div>
+                    <a href="#" class="login__lost-password link-decor-on-hover">Lost Password?</a>
+                </form>
+            </div>
+        </section>
+        <!-- / section #modal -->
         <section class="header__inner-wrapper">
             <div class="container">
                 <div class="header__inner">
@@ -23,7 +54,7 @@
                         <div class="header__help">
                             <span class="header__label-red">Need help?</span>
                             <span> Talk to an expert:
-                                <a class="link-inherit link-decor-inverse" href="tel:+61 3 8376 6284">+61 3 8376 6284</a>
+                                <a class="link-decor-on-hover" href="tel:+61 3 8376 6284">+61 3 8376 6284</a>
                             </span>
                         </div>
                         <!-- / header__help -->
@@ -74,8 +105,8 @@
                         <!-- / header__notify-->
 
                         <div class="header__actions header__actions--anon">
-                            <a href="#" class="header__btn header__btn--green">Login</a>
-                            <a href="#" class="header__btn header__btn--red">Register</a>
+                            <a href="#" class="header__btn header__btn--green header__btn--trigger">Login</a>
+                            <a href="#" class="header__btn header__btn--red header__btn--trigger">Register</a>
                         </div>
                         <!-- / header__actions -->
                     </div>
@@ -1977,6 +2008,9 @@
             src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
             integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
             crossorigin="anonymous"></script>
+
+    <!-- izimodal -->
+    <script src="js/izimodal.js"></script>
 
     <!-- owl.carousel -->
     <script src="js/owl.carousel.min.js"></script>

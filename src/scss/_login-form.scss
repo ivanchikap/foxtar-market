@@ -1,0 +1,120 @@
+.iziModal {
+  background-color: #8bc34a;
+}
+
+.login {
+  padding: 92px 15px 144px;
+  position: relative;
+
+  &__close {
+    font-size: 18px;
+    color: #fff;
+    position: absolute;
+    top: 21px;
+    right: 27px;
+    cursor: pointer;
+
+    &:hover {
+      color: #e52d27;
+    }
+  }
+
+  &__title {
+    color: #fff;
+    font-size: 48px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 42px;
+    text-align: center;
+
+    @include mobile {
+      font-size: 36px;
+    }
+  }
+
+  &__form {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  &__input-group {
+    display: flex;
+    align-items: center;
+    background-color: #76ae36;
+    padding: 0 18px;
+    color: #fff;
+
+    & + & {
+      margin-top: 8px;
+    }
+  }
+
+  &__input-icon {
+    font-size: 14px;
+    margin-right: 12px;
+  }
+
+  &__input {
+    height: 43px;
+    font-size: 14px;
+    background-color: transparent;
+    width: 100%;
+    color: inherit;
+
+    &::-webkit-input-placeholder {color:#fff;}
+    &::-moz-placeholder          {color:#fff;}/* Firefox 19+ */
+    &:-moz-placeholder           {color:#fff;}/* Firefox 18- */
+    &:-ms-input-placeholder      {color:#fff;}
+  }
+
+  &__buttons {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 28px;
+
+    @include mobile {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__submit {
+    width: 139px;
+    height: 48px;
+    box-shadow: 0 2px 2px rgba(118, 174, 54, 0.75);
+    background-color: #ffffff;
+    border: none;
+    margin-right: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: #000;
+    text-transform: uppercase;
+
+    @include mobile {
+      width: 100%;
+      margin-bottom: 10px;
+      margin-right: 0;
+    }
+  }
+
+  &__register {
+   flex-grow: 1;
+    display: flex;
+    height: 48px;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+    color: #fff;
+    font-size: 18px;
+    background-color: #76ae36;
+
+    .fas {
+      margin-right: 12px;
+    }
+  }
+
+  &__lost-password {
+    color: #ffffff;
+    font-size: 18px;
+  }
+}

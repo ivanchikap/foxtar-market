@@ -52,6 +52,22 @@
         }
     });
 
+    if ($("section").is('.modal')) {
+        $("#modal").iziModal({
+            width: 730,
+            radius: 0
+        });
+    }
+
+    $(document).on('click', '.header__btn--trigger', function (event) {
+        event.preventDefault();
+        $('#modal').iziModal('open');
+    });
+    $(document).on('click', '.login__close', function (event) {
+        event.preventDefault();
+        $('#modal').iziModal('close');
+    });
+
 
     if ($("section").is('.upload-product')) {
         $('.upload-form select').styler();
