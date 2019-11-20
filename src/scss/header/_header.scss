@@ -51,7 +51,7 @@
     align-items: center;
     height: 92px;
 
-    @include mobile-large {
+    @include mobile {
       flex-direction: column;
       padding: 24px 0 0;
       height: auto;
